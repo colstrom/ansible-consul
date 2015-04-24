@@ -1,0 +1,17 @@
+---
+dependencies:
+  - role: colstrom.go
+galaxy_info:
+  author: "Chris Olstrom"
+  categories:
+    - clustering
+    - monitoring
+    - system
+  company: "TELUS digital"
+  description: "Consul is a tool for service discovery and configuration. Consul is distributed, highly available, and extremely scalable."
+  license: mit
+  min_ansible_version: 1.2
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
