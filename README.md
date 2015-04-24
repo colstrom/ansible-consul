@@ -2,6 +2,8 @@
 
 Consul is a tool for service discovery and configuration. Consul is distributed, highly available, and extremely scalable.
 
+[![Platforms](http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg?style=flat)](#)
+
 Tunables
 --------
 * None
