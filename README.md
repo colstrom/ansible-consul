@@ -10,7 +10,7 @@ Tunables
 
 Dependencies
 ------------
-* [colstrom.go](/colstrom/ansible-go)
+* [colstrom.apt-repository](https://github.com/colstrom/ansible-apt-repository/)
 
 Example Playbook
 ----------------
