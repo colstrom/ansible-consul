@@ -1,6 +1,6 @@
 ---
 dependencies:
-  - role: colstrom.go
+  - role: telusdigital.go
 galaxy_info:
   author: "Chris Olstrom"
   categories:
