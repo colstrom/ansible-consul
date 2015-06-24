@@ -13,5 +13,5 @@
 - file:
     state: link
     src: "/opt/consul/bin/{{ consul_addon }}"
-    dest: /usr/local/bin
+    dest: "/usr/local/bin/{{ consul_addon }}"
     force: yes

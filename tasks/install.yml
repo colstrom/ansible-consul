@@ -15,7 +15,7 @@
 - file:
     state: link
     src: /opt/consul/bin/consul
-    dest: /usr/local/bin
+    dest: /usr/local/bin/consul
     force: yes
 
 - get_url:
