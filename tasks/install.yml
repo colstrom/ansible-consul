@@ -33,8 +33,6 @@
     dest: /opt/consul/ui
     force: yes
 
-- include: install/ui.yml
-
 - include: install-addon.yml
   consul_addon: envconsul
 
