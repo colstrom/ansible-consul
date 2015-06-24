@@ -36,10 +36,10 @@
 - include: install/ui.yml
 
 - include: install-addon.yml
-    consul_addon: "envconsul"
+  consul_addon: envconsul
 
 - include: install-addon.yml
-    consul_addon: "consul-replicate"
+  consul_addon: "consul-replicate"
 
 - include: install-addon.yml
-    consul_addon: "consul-template"
+  consul_addon: "consul-template"
