@@ -8,7 +8,7 @@
     dest: /tmp
     copy: no
 
-- command: "mv /tmp/{{ consul_addon }}_{{ consul_addon_version[consul_addon] }}/{{ consul_addon }} /opt/consul/bin/{{ consul_addon }}"
+- command: "mv /tmp/{{ consul_addon }}_{{ consul_addon_version[consul_addon] }}_linux_amd64/{{ consul_addon }} /opt/consul/bin/{{ consul_addon }}"
 
 - file:
     state: link
