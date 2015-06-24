@@ -1,0 +1,3 @@
+---
+consul_archive: "consul-{{ consul_version }}_linux_amd64.zip"
+consul_ui_archive: "consul-{{ consul_ui_version }}_web_ui.zip"
