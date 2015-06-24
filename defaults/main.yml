@@ -1,4 +1,7 @@
 ---
 consul_version: 0.5.2
-consul_archive: "consul-{{ consul_version }}_linux_amd64.zip"
-consul_ui_archive: "consul-{{ consul_version }}_web_ui.zip"
+consul_ui_version: 0.5.2
+consul_addon_version:
+  "consul-template": 0.10.0
+  envconsul: 0.5.0
+  "consul-replicate": 0.2.0
