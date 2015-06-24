@@ -18,7 +18,7 @@
     - /opt/consul/bin
     - /opt/consul/conf.d
     - /opt/consul/data
-    - /opt/consul/ui
+    - "/opt/consul/ui-{{ consul_ui_version }}"
 
 - file:
     state: link
