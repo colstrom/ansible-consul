@@ -1,0 +1,17 @@
+---
+- get_url:
+    url: "https://github.com/hashicorp/{{ consul_addon }}/releases/download/v{{ consul_addon_version[consul_addon] }}/{{ consul_addon }}_{{ consul_addon_version[consul_addon] }}_linux_amd64.tar.gz"
+    dest: "/tmp/{{ consul_addon }}_{{ consul_addon_version[consul_addon] }}_linux_amd64.tar.gz"
+
+- unarchive:
+    src: "/tmp/{{ consul_addon }}_{{ consul_addon_version[consul_addon] }}_linux_amd64.tar.gz"
+    dest: /tmp
+    copy: no
+
+- command: "mv /tmp/{{ consul_addon }}_{{ consul_addon_version[consul_addon] }}/{{ consul_addon }} /opt/consul/bin/{{ consul_addon }}"
+
+- file:
+    state: link
+    src: "/opt/consul/bin/{{ consul_addon }}"
+    dest: /usr/local/bin
+    force: yes
