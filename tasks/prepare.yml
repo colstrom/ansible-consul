@@ -1,0 +1,25 @@
+---
+- group:
+    name: consul
+    system: yes
+
+- user:
+    name: consul
+    group: consul
+    system: yes
+
+- file:
+    state: directory
+    path: "{{ item }}"
+    owner: consul
+    group: wcadmin
+    mode: 0750
+  with_items:
+    - /opt/consul/bin
+    - /opt/consul/conf.d
+    - /opt/consul/data
+
+- file:
+    state: link
+    src: /opt/consul/conf.d
+    dest: /etc/consul.d
