@@ -18,6 +18,7 @@
     - /opt/consul/bin
     - /opt/consul/conf.d
     - /opt/consul/data
+    - /opt/consul/ui
 
 - file:
     state: link
