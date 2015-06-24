@@ -24,5 +24,22 @@
 
 - unarchive:
     src: "/tmp/{{ consul_ui_archive }}"
-    dest: /opt/consul/ui
+    dest: "/opt/consul/ui-{{ consul_ui_version }}"
     copy: no
+
+- file:
+    state: link
+    src: "/opt/consul/ui-{{ consul_ui_version }}"
+    dest: /opt/consul/ui
+    force: yes
+
+- include: install/ui.yml
+
+- include: install-addon.yml
+    consul_addon: "envconsul"
+
+- include: install-addon.yml
+    consul_addon: "consul-replicate"
+
+- include: install-addon.yml
+    consul_addon: "consul-template"
