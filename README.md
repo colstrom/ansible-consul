@@ -10,13 +10,13 @@ Tunables
 
 Dependencies
 ------------
-* [telusdigital.apt-repository](https://github.com/telusdigital/ansible-apt-repository/)
+* None
 
 Example Playbook
 ----------------
     - hosts: servers
       roles:
-         - role: telusdigital.consul
+         - role: colstrom.consul
 
 License
 -------
